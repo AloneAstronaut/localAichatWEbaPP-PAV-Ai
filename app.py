@@ -81,7 +81,7 @@ else:
                 stop_generation = st.button("Stop Generation")
                 if stop_generation:
                     st.stop()
-                bot_response = llm(user_input).strip()
+                bot_response = llm.invoke(user_input).strip()
             except Exception as e:
                 bot_response = f"Error: {e}"
 
