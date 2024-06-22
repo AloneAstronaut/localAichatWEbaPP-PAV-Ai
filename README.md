@@ -14,8 +14,8 @@ PAV AI is a Streamlit-based application that uses locally running LLMs (Large La
 
 ## Requirements
 
-- Python 3.7 or higher
-- Streamlit
+- `Python 3.7 or higher`
+- `Streamlit`
 - `langchain_community.llms`
 - `pdfplumber`
 - `python-docx`
@@ -24,13 +24,16 @@ PAV AI is a Streamlit-based application that uses locally running LLMs (Large La
 
 ### Local LLM Using Ollama
 
-1. Install Ollama from (https://www.ollama.com/).
-2. Run the Ollama app, ensuring it is running on `http://localhost:11434` by using the command line:
-    ```sh
+1. Install Ollama from https://www.ollama.com/ or  https://github.com/ollama/ollama.git
+3. Run the Ollama app, ensuring it is running on `http://localhost:11434` by using the command line:
+
+   ```sh
     ollama serve
     ```
-3. Pull the required models from the command line:
-    ```sh
+    ensuring it is running on `http://localhost:11434`
+5. Pull the required models from the command line:
+
+   ```sh
     ollama pull model_name
     ```
    For this app, we use `llama3`, `phi3`, and `mistral` models.
@@ -44,12 +47,40 @@ PAV AI is a Streamlit-based application that uses locally running LLMs (Large La
     cd your-repository
     ```
 
-2. Install the required packages:
+2. Create Python Virtual Environent and Activate 
+    For windows
+   
+   ```sh
+   # Open Command Prompt and navigate to your project directory
+   cd \path\to\your\project
+   # Create a virtual environment
+   python -m venv venv
+   # Activate the virtual environment
+   .\venv\Scripts\activate
+   # Dectivate the virtual environment
+    deactivate
+   ```
+   For Linux
+   
+   ```sh
+   sudo apt update
+   sudo apt install python3 python3-venv python3-pip
+   # Open Command Prompt and navigate to your project directory
+   cd /path/to/your/project
+   # Create a virtual environment
+   python3 -m venv venv
+   # Activate the virtual environment
+   source venv/bin/activa
+   # Deactivate the virtual environment
+   deactivate
+   ```
+3.Install reduired packages
 
-    ```sh
-    pip install -r requirements.txt
-    ```
-
+```sh
+# Install required packages
+   pip install -r requirements.txt
+```
+   
 ## Usage
 
 1. Run the Streamlit app:
