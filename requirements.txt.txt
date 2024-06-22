@@ -3,3 +3,5 @@ langchain_community
 pdfplumber
 python-docx
 ollama
+tensorflow 
+pytorch
